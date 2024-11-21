@@ -61,4 +61,34 @@ Start the Streamlit application with:
 ```bash
 streamlit run app/main.py
 
+Example Output
+Input
+A sample input is a URL to a company's careers page.
+
+Output
+Extracted Job Listings
+After processing the URL, the tool extracts job listings in JSON format. For example:
+
+[
+  {
+    "job_title": "Software Engineer",
+    "skills": ["Python", "Machine Learning", "Django"],
+    "experience": "2-4 years",
+    "job_description": "Build and deploy scalable web applications..."
+  }
+]
+**Generated Cold Email**
+Using the extracted job information and relevant portfolio links, the tool generates a personalized cold email like this:
+
+Subject: Excited to Contribute to Your Team as a Software Engineer
+
+Dear [Hiring Manager's Name],
+
+I recently came across the Software Engineer position on your careers page and was captivated by the opportunity to contribute to your team's mission. Having worked extensively with Python, Machine Learning, and Django, I am confident in my ability to build scalable web applications that align with your company’s goals. Attached are some of my portfolio links showcasing relevant projects.
+
+Looking forward to the possibility of discussing this role further.
+
+Best Regards,  
+[Your Name]
+
 
